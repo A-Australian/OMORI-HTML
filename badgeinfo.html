@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>OMORI.EXE Badges</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial;
+                background: #000;
+                color: #fff;
+            }
+            .container {
+                max-width: 1100px;
+                margin: 40px auto;
+                padding: 20px;
+                background: rgba(20, 20, 20, 0.6);
+                backdrop-filter: blur(6px);
+                border-radius: 10px;
+            }
+            h1 {
+                text-align: center;
+            }
+            h2 {
+                margin-top: 40px;
+                border-bottom: 1px solid #444;
+                padding-bottom: 5px;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 20px;
+                margin-top: 20px;
+            }
+            .badge {
+                text-align: center;
+            }
+            .badge img {
+                width: 88px;
+                margin-bottom: 8px;
+            }
+            .name {
+                font-weight: bold;
+            }
+            .sub {
+                font-size: 12px;
+                opacity: 0.7;
+            }
+            .desc {
+                font-size: 13px;
+                opacity: 0.8;
+                margin-top: 5px;
+            }
+            .badge {
+                text-align: center;
+                padding: 10px;
+            }
+
+            .badge img {
+                width: 90px;
+            }
+
+            /* name styling */
+            .badge .name {
+                font-family: "Share Tech Mono", monospace;
+                color: #ffffff;
+                font-size: 16px;
+                text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+            }
+
+            /* description styling */
+            .badge .desc {
+                font-family: "Share Tech Mono", monospace;
+                color: #bbbbbb;
+                font-size: 13px;
+            }
+
+            /* OPTIONAL: second desc line looks different */
+            .badge .desc:nth-of-type(2) {
+                color: #888;
+                font-size: 12px;
+                font-style: italic;
+            }
+            .badge:hover img {
+                transform: scale(1.1);
+                filter: brightness(1.2);
+            }
+
+            .badge img {
+                transition: 0.2s;
+            }
+            body {
+                background: url("img/BG/BADGEINFOBG.PNG") repeat-y;
+                background-size: 100% auto;
+            }
+            .table-of-contents {
+                text-align: center;
+                width: max-content;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- HEADER -->
+            <h1>BADGES<br />53 IN TOTAL</h1>
+            <!-- TOC -->
+            <p class="table-of-contents">
+                TABLE OF CONTENTS <br />
+                <a href="index.html" id="dynamic-text">>Home<</a><br />
+                ><a href="badgeinfo.html"><strong>Badges</strong></a
+                ><
+                <br />
+                ><a href="about.html">About</a><
+            </p>
+            <!-- ENDINGS -->
+            <h2>ENDINGS</h2>
+            <div class="grid">
+                <div class="badge">
+                    <img src="img/badge/crushed.png" />
+                    <div class="name">CRUSHED</div>
+                    <div class="sub">[AUBREY ACT] ENDING 1/5</div>
+                    <div class="desc">
+                        TRAPPED BETWEEN THE JAWS OF A BAD FRIEND.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/migrain.png" />
+                    <div class="name">MIGRAIN</div>
+                    <div class="sub">[AUBREY ACT] ENDING 2/5</div>
+                    <div class="desc">A LOSS OF FOOTING OR JUST POOR LUCK?</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/constraint.png" />
+                    <div class="name">CONSTRAINT</div>
+                    <div class="sub">[AUBREY ACT] ENDING 3/5</div>
+                    <div class="desc">THIS IS FOR YOUR OWN GOOD, YOU KNOW?</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/belittlement.png" />
+                    <div class="name">BELITTLEMENT</div>
+                    <div class="sub">[AUBREY ACT] ENDING 4/5</div>
+                    <div class="desc">
+                        YOU FALL, A TARGET OF PROJECTED ENVY.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/hallucinatory.png" />
+                    <div class="name">HALLUCINATORY</div>
+                    <div class="sub">[AUBREY ACT] ENDING 5/5</div>
+                    <div class="desc">HAPPINESS IS SO ELUSIVE...</div>
+                </div>
+
+                <div class="badge">
+                    <img src="img/badge/silenced.png" />
+                    <div class="name">SILENCED</div>
+                    <div class="sub">[KEL ACT] ENDING 1/5</div>
+                    <div class="desc">THE GAME FAILS TO RENDER YOUR CRIES.</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/venomous.png" />
+                    <div class="name">VENOMOUS</div>
+                    <div class="sub">[KEL ACT] ENDING 2/5</div>
+                    <div class="desc">WELCOME HOME, KEL! WE MISSED YOU.</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/refrainment.png" />
+                    <div class="name">REFRAINMENT</div>
+                    <div class="sub">[KEL ACT] ENDING 3/5</div>
+                    <div class="desc">
+                        YOU SHOULD HAVE STUCK WITH YOUR GUT...
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/disillusioned.png" />
+                    <div class="name">DISILLUSIONED</div>
+                    <div class="sub">[KEL ACT] ENDING 4/5</div>
+                    <div class="desc">WAS IT ALL FUTILE TO BEGIN WITH?</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/spoiled.png" />
+                    <div class="name">SPOILED</div>
+                    <div class="sub">[KEL ACT] ENDING 5/5</div>
+                    <div class="desc">REALITY MELTS APART AT THE SEAMS.</div>
+                </div>
+
+                <div class="badge">
+                    <img src="img/badge/reunited.png" />
+                    <div class="name">REUNITED</div>
+                    <div class="sub">[HERO ACT] ENDING 1/6</div>
+                    <div class="desc">ANOTHER VOICE IN THEIR CHOIR.</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/burning_corpse.png" />
+                    <div class="name">BURNING CORPSE</div>
+                    <div class="sub">[HERO ACT] ENDING 2/6</div>
+                    <div class="desc">LIGHT ENGULFS YOUR FINAL MOMENTS.</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/burning_corpse.png" />
+                    <div class="name">SUBMERGED</div>
+                    <div class="sub">[HERO ACT] ENDING 3/6</div>
+                    <div class="desc">THE SURFICE, SO NEAR YET SO FAR.</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/burning_corpse.png" />
+                    <div class="name">OVERPOWERED</div>
+                    <div class="sub">[HERO ACT] ENDING 4/6</div>
+                    <div class="desc">IT WAS JUST TOO MUCH TO BURDEN.</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/burning_corpse.png" />
+                    <div class="name">BATTERED</div>
+                    <div class="sub">[HERO ACT] ENDING 5/6</div>
+                    <div class="desc">YOUR WORDS CAN HARDLY REACH HER NOW.</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/burning_corpse.png" />
+                    <div class="name">CAPTURED</div>
+                    <div class="sub">[HERO ACT] ENDING 6/6</div>
+                    <div class="desc">WHEN DID EVERYTHING FALL APART?</div>
+                </div>
+            </div>
+
+            <!-- OMORI ROUTE -->
+            <h2>OMORI ROUTE</h2>
+            <div class="grid">
+                <div class="badge">
+                    <img src="img/badge/power_of_friendship.png" />
+                    <div class="name">POWER OF FRIENDSHIP</div>
+                    <div class="desc">[MARI ACT] ENDING 1/1</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/gokifbtv.png" />
+                    <div class="name">GOKIFBTV</div>
+                    <div class="desc">VIGENERE KEY TAPE - 1</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/tlue.png" />
+                    <div class="name">TLUE</div>
+                    <div class="desc">VIGENERE KEY TAPE - 2</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/hsrek.png" />
+                    <div class="name">HSREK</div>
+                    <div class="desc">VIGENERE KEY TAPE - 3</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/fizi.png" />
+                    <div class="name">FIZI</div>
+                    <div class="desc">VIGENERE KEY TAPE - 4</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/bnsmt.png" />
+                    <div class="name">BNSMT</div>
+                    <div class="desc">VIGENERE KEY TAPE - 5</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/the_truth_prevails.png" />
+                    <div class="name">THE TRUTH PREVIALS</div>
+                    <div class="desc">[MARI ACT] ENDING 2/1</div>
+                </div>
+            </div>
+
+            <!-- AUBREY -->
+            <h2>AUBREY - ROUTE BADGES</h2>
+            <div class="grid">
+                <div class="badge">
+                    <img src="img/badge/disturbed_nonconfrontant.png" />
+                    <div class="name">DISTURBED NONCONFRONTANT</div>
+                    <div class="desc">
+                        Refuse to fight any of the forest bunnies.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/immortal_she.png" />
+                    <div class="name">IMMORTAL SHE</div>
+                    <div class="desc">Encounter OMORI.</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/misdirection.png" />
+                    <div class="name">MISDIRECTION</div>
+                    <div class="desc">
+                        Step on a damage tile. OMORI warned you and everything!
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/a_moment_of_peace.png" />
+                    <div class="name">A MOMENT OF PEACE</div>
+                    <div class="desc">
+                        Relax above the gloomy skies alongside OMORI.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/despite_wavering_gloom.png" />
+                    <div class="name">DESPITE WAVERING GLOOM</div>
+                    <div class="desc">
+                        Rehash your trust in OMORI. The feeling seems mutual.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/physiological_reaction.png" />
+                    <div class="name">PHYSIOGICAL REACTION</div>
+                    <div class="desc">
+                        Make it to the end of the chase sequence map.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/unwelcome_surprise.png" />
+                    <div class="name">UNWELCOME SURPRISE</div>
+                    <div class="desc">
+                        Be visited by MAJ.IN on random occasion.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/love_is_infinite.png" />
+                    <div class="name">LOVE IS INFINITE</div>
+                    <div class="desc">
+                        Encounter and recruit MARI. The greatest big sister you
+                        never had!
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/aubreys_rage.png" />
+                    <div class="name">AUBREY'S RAGE</div>
+                    <div class="desc">
+                        Smack PUZZY in the back of the head. That was
+                        unnecessarily cruel.
+                    </div>
+                </div>
+            </div>
+
+            <!-- KEL -->
+            <h2>KEL - ROUTE BADGES</h2>
+            <div class="grid">
+                <div class="badge">
+                    <img src="img/badge/filthy_shotacon.png" />
+                    <div class="name">FILTY SHOTACON</div>
+                    <div class="desc">
+                        Get sent to hell by SHATTERED OMORI. Nasty degenerate.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/to_catch_a_pixiv_user.png" />
+                    <div class="name">TO CATCH A PIXIV USER</div>
+                    <div class="desc">
+                        Get SOFTLOCKED in hell by SHATTERED OMORI. What a hill
+                        to die on.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/boring_gladiator.png" />
+                    <div class="name">BORING GLADIATOR</div>
+                    <div class="desc">
+                        Defeat the beast of HELL and take his throne.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/cultured.png" />
+                    <div class="name">CULTURED</div>
+                    <div class="desc">
+                        Complete the first puzzle on the first try.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/chronic_yappoholism.png" />
+                    <div class="name">CHRONIC YAPPOHOLISM</div>
+                    <div class="desc">
+                        Cycle through all of the PUZZY dialogue. <br />Alt
+                        routes included.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/merciless_rampage.png" />
+                    <div class="name">MERCILESS RAMPAGE</div>
+                    <div class="desc">
+                        Destroy all of the mannequins in the cave segment.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/bad_getaway.png" />
+                    <div class="name">BAD GETAWAY</div>
+                    <div class="desc">
+                        Get caught by OMORI during the chase segment.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/rock_and_a_hard_place.png" />
+                    <div class="name">ROCK AND A HARD PLACE</div>
+                    <div class="desc">
+                        Be visited by a peculiar apparation.<br />
+                        OMORI PS Vita port when?
+                    </div>
+                </div>
+            </div>
+
+            <!-- HERO -->
+            <h2>HERO - ROUTE BADGES</h2>
+            <div class="grid">
+                <div class="badge">
+                    <img src="img/badge/flower_boy_savior.png" />
+                    <div class="name">FLOWER BOY SAVIOR</div>
+                    <div class="desc">
+                        Defeat all quicktime enemies in a playthrough. Nice
+                        going!
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/flower_boy_traitor.png" />
+                    <div class="name">FLOWER BOY TRAITOR</div>
+                    <div class="desc">
+                        Threaten to ditch BASIL multiple times. You monster.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/nightvision.png" />
+                    <div class="name">NIGHTVISION</div>
+                    <div class="desc">
+                        Use flash a total of 0 times. I am sorry for your
+                        suffering.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/perservance.png" />
+                    <div class="name">PERSERVANCE</div>
+                    <div class="desc">
+                        CONTINUE. <br />Nothing can let you down.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/vapid_forfeiting.png" />
+                    <div class="name">VAPID FORFEITING</div>
+                    <div class="desc">
+                        SURRENDER.<br />
+                        Why did you let him down?
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/close_call.png" />
+                    <div class="name">CLOSE CALL</div>
+                    <div class="desc">
+                        Escape the island at the last minute.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/unwelcome_surprise.png" />
+                    <div class="name">YOU'RE BACK, MARI</div>
+                    <div class="desc">
+                        Be visited by MAJ.IN on a random occasion...<br />
+                        wait what?
+                    </div>
+                </div>
+            </div>
+
+            <!-- OTHER -->
+            <h2>OTHER BADGES</h2>
+            <div class="grid">
+                <div class="badge">
+                    <img src="img/badge/secret_ending.png" />
+                    <div class="name">SECRET ENDING</div>
+                    <div class="desc">
+                        Oh great. Unexpected visitors. <br />My favourite.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/connection_through_reflection.png" />
+                    <div class="name">CONNECTION THROUGH REFLECTION</div>
+                    <div class="desc">
+                        [FULL GAME] <br />FIND ALL MIRRORS IN EVERY ACT.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/sonic_mania.png" />
+                    <div class="name">SONIC MANIA</div>
+                    <div class="desc">
+                        [FULL GAME]<br />
+                        Find all hidden characters in every act.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/slip_up.png" />
+                    <div class="name">SLIP-UP</div>
+                    <div class="desc">
+                        End up in MENU 6 after failing to load a save.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/sure_buddy.png" />
+                    <div class="name">SURE BUDDY</div>
+                    <div class="desc">Enter a specific code into the PC.</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/omocat_enterprises.png" />
+                    <div class="name">OMOCAT ENTERPRISES</div>
+                    <div class="desc">
+                        You did not find this by chance.<br />
+                        Enter a specific code into the PC.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/worlds_worst_game_of_tag.png" />
+                    <div class="name">WORLD'S WORST GAME OF TAG</div>
+                    <div class="desc">
+                        Have one playthrough exclusively consist of the chase
+                        routes.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/e_for_exori.png" />
+                    <div class="name">E FOR EXORI</div>
+                    <div class="desc">
+                        Progress EXORI to STAGE 2. Will think about making this
+                        a full mode. Maybe.
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/cardiac_arrest.png" />
+                    <div class="name">CARDIAC ARREST</div>
+                    <div class="desc">Report the bug.</div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/window_shopping.png" />
+                    <div class="name">WINDOW SHOPPING</div>
+                    <div class="desc">
+                        Get a special tune in the elevator. Fuhuhu...
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="img/badge/window_shopping.png" />
+                    <div class="name">HELLO WORLD!</div>
+                    <div class="desc">Log into the developer computer.</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/badge.js"></script>
+</html>
