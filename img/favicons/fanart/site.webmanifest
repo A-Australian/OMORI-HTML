@@ -1,0 +1,21 @@
+{
+  "name": "OMOEXE FANART",
+  "short_name": "FANART",
+  "icons": [
+    {
+      "src": "/img/favicons/fanart/web-app-manifest-192x192.png?v=20260506",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/img/favicons/fanart/web-app-manifest-512x512.png?v=20260506",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
