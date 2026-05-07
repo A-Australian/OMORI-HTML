@@ -1,294 +1,314 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Fanart</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fanart</title>
 
-        <link
-            href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            href="img/favicons/fanart/favicon-96x96.png?v=20260506"
-            sizes="96x96"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="img/favicons/fanart/favicon.svg?v=20260506"
-        />
-        <link
-            rel="shortcut icon"
-            href="img/favicons/fanart/favicon.ico?v=20260506"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="img/favicons/fanart/apple-touch-icon.png?v=20260506"
-        />
-        <meta name="apple-mobile-web-app-title" content="Fanart" />
-        <link
-            rel="manifest"
-            href="img/favicons/fanart/site.webmanifest?v=20260506"
-        />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicons/fanart/favicon-96x96.png?v=20260506"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="img/favicons/fanart/favicon.svg?v=20260506"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicons/fanart/favicon.ico?v=20260506"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/fanart/apple-touch-icon.png?v=20260506"
+    />
+    <meta name="apple-mobile-web-app-title" content="Fanart" />
+    <link
+      rel="manifest"
+      href="img/favicons/fanart/site.webmanifest?v=20260506"
+    />
 
-        <style>
-            body {
-                margin: 0;
-                background: url("img/BG/FANARTBG.jpg") center / cover no-repeat
-                    fixed;
-                font-family: "Share Tech Mono", monospace;
-                color: #fff;
-            }
+    <style>
+      body {
+        margin: 0;
+        background: url("img/BG/FANARTBG.jpg") center / cover no-repeat fixed;
+        font-family: "Share Tech Mono", monospace;
+        color: #fff;
+      }
 
-            /* Frosted glass container */
-            .container {
-                max-width: 1000px;
-                margin: 40px auto;
-                padding: 25px;
-                background: rgba(0, 0, 0, 0.6);
-                backdrop-filter: blur(8px);
-                border-radius: 12px;
-            }
+      /* Frosted glass container */
+      .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 25px;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(8px);
+        border-radius: 12px;
+      }
 
-            /* TOC */
-            .toc {
-                text-align: center;
-                margin-bottom: 20px;
-            }
+      /* TOC */
+      .toc {
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
-            .toc a {
-                color: #ccc;
-                text-decoration: none;
-            }
+      .toc a {
+        color: #ccc;
+        text-decoration: none;
+      }
 
-            .toc a:hover {
-                color: #fff;
-            }
+      .toc a:hover {
+        color: #fff;
+      }
 
-            /* Headings */
-            h1 {
-                text-align: center;
-                margin-bottom: 10px;
-            }
+      /* Headings */
+      h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
 
-            h2 {
-                margin-top: 30px;
-                border-bottom: 1px solid #444;
-                padding-bottom: 5px;
-            }
+      h2 {
+        margin-top: 30px;
+        border-bottom: 1px solid #444;
+        padding-bottom: 5px;
+      }
 
-            h3 {
-                margin-top: 20px;
-                color: #ddd;
-            }
+      h3 {
+        margin-top: 20px;
+        color: #ddd;
+      }
 
-            /* Text */
-            p {
-                text-align: center;
-                color: #bbb;
-            }
+      /* Text */
+      p {
+        text-align: center;
+        color: #bbb;
+      }
 
-            /* Image grid */
-            .gallery {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 15px;
-                justify-content: center;
-                margin-top: 10px;
-            }
+      /* Image grid */
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 10px;
+      }
 
-            .gallery img {
-                width: 300px;
-                border-radius: 6px;
-                transition: 0.2s;
-            }
+      .gallery .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-            .gallery-render img {
-                width: 450px;
-                border-radius: 6px;
-                transition: 0.2s;
-            }
+      .gallery img {
+        width: 300px;
+        border-radius: 6px;
+        transition: 0.2s;
+      }
 
-            .gallery-basil img {
-                border-radius: 6px;
-                transition: 0.2s;
-            }
+      .gallery-render img {
+        width: 450px;
+        border-radius: 6px;
+        transition: 0.2s;
+      }
 
-            .gallery img:hover {
-                transform: scale(1.05);
-                filter: brightness(1.2);
-            }
+      .gallery-basil img {
+        border-radius: 6px;
+        transition: 0.2s;
+      }
 
-            .gallery-basil img:hover {
-                transform: scale(1.05);
-                filter: brightness(1.2);
-            }
+      .gallery-basil {
+        margin-left: 130px;
+      }
 
-            .gallery-render img:hover {
-                transform: scale(1.05);
-                filter: brightness(1.2);
-            }
+      .gallery img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+      }
 
-            .credit {
-                font-size: 12px;
-                color: #888;
-                margin-top: 5px;
-            }
+      .gallery-basil img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+      }
 
-            .credit a {
-                color: #aaa;
-                text-decoration: none;
-            }
+      .gallery-render img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+      }
 
-            .credit a:hover {
-                color: #fff;
-            }
-        </style>
-    </head>
+      .credit {
+        font-size: 12px;
+        color: #888;
+        margin-top: 5px;
+      }
 
-    <body>
-        <div class="container">
-            <!-- MAIN TITLE -->
-            <h1>FANART / OFFICIAL RENDERS</h1>
-            <p>
-                Some Exori art! Note: the offical renders are by Nyan, all other
-                art are credited below.
-            </p>
+      .credit a {
+        color: #aaa;
+        text-decoration: none;
+      }
 
-            <!-- TOC -->
-            <div class="toc">
-                <p>
-                    TABLE OF CONTENTS <br />
-                    <a href="/">>Home<</a>
-                    <br />
-                    <a href="badgeinfo.html">>Badges<</a>
-                    <br />
-                    <a href="badgeguide.html">>Badge Guide<</a>
-                    <br />
-                    <a href="quick-help.html"> >Quick Guide< </a>
-                    <br />
-                    <strong><a href="fanart.html">>Fanart<</a> </strong>
-                    <br />
-                    <a href="about.html">>About<</a>
-                </p>
-            </div>
+      .credit a:hover {
+        color: #fff;
+      }
+    </style>
+  </head>
 
-            <!-- OFFICIAL RENDERS -->
-            <h2>OFFICIAL RENDERS</h2>
+  <body>
+    <div class="container">
+      <!-- MAIN TITLE -->
+      <h1>FANART / OFFICIAL RENDERS</h1>
+      <p>
+        Some Exori art! Note: the offical renders are by Nyan, all other art are
+        credited below.
+      </p>
 
-            <h3>AUB.EYX</h3>
-            <div class="gallery-render">
-                <img src="img/art/renders/aub.webp" />
-            </div>
+      <!-- TOC -->
+      <div class="toc">
+        <p>
+          TABLE OF CONTENTS <br />
+          <a href="index.html">&gt;Home&lt;</a><br />
+          <a href="badgeinfo.html">&gt;Badges&lt;</a><br />
+          <a href="badgeguide.html">&gt;Badge Guide&lt;</a><br />
+          <a href="quick-help.html">&gt;Quick Guide&lt;</a><br />
+          <strong><a href="fanart.html">&gt;Fanart&lt;</a></strong
+          ><br />
+          <a href="about.html">&gt;About&lt;</a>
+        </p>
+      </div>
 
-            <h3>K.YML</h3>
-            <div class="gallery-render">
-                <img src="img/art/renders/kyml.webp" />
-            </div>
+      <!-- OFFICIAL RENDERS -->
+      <h2>OFFICIAL RENDERS</h2>
 
-            <h3>HER.OGG</h3>
-            <div class="gallery-render">
-                <img src="img/art/renders/heroog.webp" />
-            </div>
+      <h3>AUB.EYX</h3>
+      <div class="gallery-render">
+        <img src="img/art/renders/aub.webp" />
+      </div>
 
-            <h3>.BASIL</h3>
-            <div class="gallery-basil">
-                <img src="img/art/renders/.basil.png" />
-            </div>
+      <h3>K.YML</h3>
+      <div class="gallery-render">
+        <img src="img/art/renders/kyml.webp" />
+      </div>
 
-            <h3>MAR.INI</h3>
-            <div class="gallery-render">
-                <img src="img/art/renders/marini.webp" />
-            </div>
+      <h3>HER.OGG</h3>
+      <div class="gallery-render">
+        <img src="img/art/renders/heroog.webp" />
+      </div>
 
-            <h3>EXORI</h3>
-            <div class="gallery-render">
-                <img src="img/art/renders/exori.webp" />
-            </div>
-            <br />
-            <p>All renders are by Nyan.</p>
+      <h3>.BASIL</h3>
+      <div class="gallery-basil">
+        <img src="img/art/renders/basil.png" />
+      </div>
 
-            <!-- FANART -->
-            <h2>FANART</h2>
+      <h3>MAR.INI</h3>
+      <div class="gallery-render">
+        <img src="img/art/renders/marini.webp" />
+      </div>
 
-            <h3>AUB.EYX</h3>
-            <div class="gallery">
-                <img src="img/art/fanart/aubeyx-oto.webp" />
-                <div class="credit">Art by: Otomerson</div>
-                <img src="img/art/fanart/discord nullix.png" />
-                <div class="credit">Art by: n.u.l.l.i.x on the Discord</div>
-                <img src="img/art/fanart/obstagoonie.jpg" />
-                <div class="credit">Art by: sobstagoonie on the Discord</div>
-            </div>
+      <h3>EXORI</h3>
+      <div class="gallery-render">
+        <img src="img/art/renders/exori.webp" />
+      </div>
+      <br />
+      <p>All renders are by Nyan.</p>
 
-            <h3>KEL</h3>
-            <div class="gallery">
-                <img src="img/art/fanart/starlight_gazer.jpg" />
-                <div class="credit">Art by: starlight_gazer on the Discord</div>
-            </div>
+      <!-- FANART -->
+      <h2>FANART</h2>
 
-            <h3>HERO</h3>
-            <div class="gallery">
-                <img src="img/art/fanart/discord xmangolia_elizax.png" />
-                <div class="credit">
-                    Art by: xmangolia_elizax on the Discord
-                </div>
-            </div>
-
-            <h3>.BASIL</h3>
-            <div class="gallery">
-                <img src="img/art/fanart/twitter help us.jpg" />
-                <div class="credit">
-                    Art by: @Help_Us_3337 on
-                    <a
-                        href="https://twitter.com/Help_Us_3337/status/2020192894741832024"
-                        >Twitter</a
-                    >
-                </div>
-            </div>
-
-            <h3>MAR.INI/MAS.JIN</h3>
-            <div class="gallery">
-                <p>Nothing Yet!</p>
-            </div>
-
-            <h3>EXORI</h3>
-            <div class="gallery">
-                <img src="img/art/fanart/stupid_satanosagain.jpg" />
-                <div class="credit">
-                    Art by: stupid_satanosagain on the Discord
-                </div>
-                <img src="img/art/fanart/EXORI-2-themanicdreamer-twt.webp" />
-                <div class="credit">
-                    Art by: @theManicDreamer on
-                    <a
-                        href="nitter.poast.org/TheManicDreamer/status/2045538266519097426#m"
-                        >Twitter</a
-                    >
-                </div>
-                <img src="img/art/fanart/omomori_143.png" />
-                <div class="credit">Art by: omomori_143 on the Discord</div>
-            </div>
-
-            <h3>SHATTERED</h3>
-            <div class="gallery">
-                <img src="img/art/fanart/shattered-oto.webp" />
-                <br />
-                <div class="credit">Art by: Otomerson</div>
-            </div>
-
-            <h3>PUZZY</h3>
-            <div class="gallery">
-                <img src="img/art/fanart/puzzy-oto.webp" />
-                <div class="credit">Art by: Otomerson</div>
-                <img src="img/art/fanart/discord manicdreamer1126.png" />
-                <div class="credit">
-                    Art by: manicdreamer1126 on the Discord
-                </div>
-            </div>
+      <h3>AUB.EYX</h3>
+      <div class="gallery">
+        <div class="item">
+          <img src="img/art/fanart/aubeyx-oto.webp" />
+          <div class="credit">Art by: Otomerson</div>
         </div>
-    </body>
+        <div class="item">
+          <img src="img/art/fanart/discord nullix.png" />
+          <div class="credit">Art by: n.u.l.l.i.x on Discord</div>
+        </div>
+        <div class="item">
+          <img src="img/art/fanart/obstagoonie.jpg" />
+          <div class="credit">Art by: sobstagoonie on Discord</div>
+        </div>
+      </div>
+
+      <h3>KEL</h3>
+      <div class="gallery">
+        <div class="item">
+          <img src="img/art/fanart/starlight_gazer.jpg" />
+          <div class="credit">Art by: starlight_gazer on Discord</div>
+        </div>
+      </div>
+
+      <h3>HERO</h3>
+      <div class="gallery">
+        <div class="item">
+          <img src="img/art/fanart/discord xmangolia_elizax.png" />
+          <div class="credit">Art by: xmangolia_elizax on Discord</div>
+        </div>
+      </div>
+
+      <h3>.BASIL</h3>
+      <div class="gallery">
+        <div class="item">
+          <img src="img/art/fanart/twitter help us.jpg" />
+          <div class="credit">
+            Art by: @Help_Us_3337 on
+            <a href="https://x.com/Help_Us_3337/status/2020192894741832024"
+              >Twitter/X</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <h3>MAR.INI/MAS.JIN</h3>
+      <div class="gallery">
+        <p>Nothing Yet!</p>
+      </div>
+
+      <h3>EXORI</h3>
+      <div class="gallery">
+        <div class="item">
+          <img src="img/art/fanart/stupid_satanosagain.jpg" />
+          <div class="credit">Art by: stupid_satanosagain on Discord</div>
+        </div>
+        <div class="item">
+          <img src="img/art/fanart/EXORI-2-themanicdreamer-twt.webp" />
+          <div class="credit">
+            Art by: @theManicDreamer on
+            <a href="https://x.com/TheManicDreamer/status/2045538266519097426"
+              >Twitter/X</a
+            >
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/art/fanart/omomori_143.png" />
+          <div class="credit">Art by: omomori_143 on Discord</div>
+        </div>
+      </div>
+
+      <h3>SHATTERED</h3>
+      <div class="gallery">
+        <div class="item">
+          <img src="img/art/fanart/shattered-oto.webp" />
+          <div class="credit">Art by: Otomerson</div>
+        </div>
+      </div>
+
+      <h3>PUZZY</h3>
+      <div class="gallery">
+        <div class="item">
+          <img src="img/art/fanart/puzzy-oto.webp" />
+          <div class="credit">Art by: Otomerson</div>
+        </div>
+        <div class="item">
+          <img src="img/art/fanart/discord manicdreamer1126.png" />
+          <div class="credit">Art by: manicdreamer1126 on Discord</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
